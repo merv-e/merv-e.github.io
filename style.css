@@ -1,0 +1,198 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+/* NAVBAR */
+#navbar {
+    position: fixed; 
+    top: 0px;
+    right: 0px;
+    background: #A52A2A;
+    width: 100%;
+    font-size: 25px;
+    border: 1px solid #A52A2A;
+    z-index: 10;
+}
+
+ul {
+list-style: none;
+display: flex; 
+flex-direction: row;  
+float: right;
+}
+
+.nav-link {
+padding-right: 20px;
+}
+
+
+/* SECTION 1 : ABOUT */
+#welcome-section {
+font-family: Georgia, sans-serif, cursive; 
+}
+
+#welcome {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+#main-header{
+    font-size: 60px;
+}
+
+header {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+#welcome-section h1 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#welcome-section p { 
+    font-size: large;
+    padding: 100px 30px 20px 20px ;
+}
+
+@media only screen and (max-width: 780px){
+    #main-header {
+        top: 20vh;
+    }	 	
+
+    h1 {
+        top: 20vh;
+    }
+}
+
+/* SECTION 2 : PROJECTS */
+
+#projects {
+    padding-top: 60px;
+    padding-bottom: 50px;
+} 
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-column-gap: 25px;
+    grid-row-gap: 5rem;
+    padding: 50px 30px 60px 20px;
+    justify-items: center;    
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    border-radius: 5%;
+}
+
+.img { 
+  position: relative;
+}
+
+.img p{
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    background-color: #000000;
+    font-size: x-large;
+    color:rgb(81, 80, 80);
+    opacity: 0.4;
+}
+
+.project-tile {
+    display: flex;
+    flex-flow: column-wrap; 
+}
+
+#btn a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+#profile-link {
+    padding: 0px;
+}
+
+@media only screen and (max-width: 780px) {
+
+#container {
+ display: grid;
+ grid-template-columns: 1fr;
+} 
+
+.project-tile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+        } 
+
+#container img {
+  width: 300px;
+  height: 300px;
+} 
+}
+
+
+/* SECTION 3- CONTACT */
+
+#contact{
+    background: black;
+    color:  #faf7f7;
+    top: 5vh;
+    position: relative;
+    text-align:center;
+}
+
+#contact header {
+    font-size: x-large;
+    padding-top: 20px;
+}
+
+#contact-container {
+    padding: 80px 0px 20px 0px;
+    display: grid;
+    grid-auto-flow: column;
+    font-weight: 600;
+}
+
+#contact a {
+    margin-top: 50px; 
+    font-size: large;
+    color: #faf7f7;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+#contact a:hover { 
+    color: rgb(81, 80, 80);
+    background-color: #faf7f7;
+}
+
+address {
+    font-style: normal;
+}
+
+@media only screen and (max-width:780px) {
+    #contact {
+        overflow: auto;
+    }
+
+#contact-container {
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 3rem; 
+  margin: 0;
+  font-size: 30px;
+}
+}
