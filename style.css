@@ -24,7 +24,7 @@ html, body {
   ul {
     list-style: none;
     display: flex; 
-    flex-position: row;  
+    flex-direction: row;  
     float: right;
   }
   
@@ -75,23 +75,34 @@ html, body {
   }
   
   #projects {
-    background: #25283D;
+    /* background: #25283D; */
   }
   
   #container {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-column-gap: 25px;
-    grid-row-gap: 5rem;
+    grid-template-columns: 1fr; 
+    gap: 40px;
     padding: 50px 30px 60px 20px;
-    justify-items: center;    
+    justify-items: center;
+    align-items: center;    
   }
   
+  img {
+    max-width: 80%;
+  }
+
   .project-tile {
-    display: flex;
-    flex-flow: column-wrap; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
   }
   
+  .project-info {
+    text-align: left;
+    line-height:  1.5;
+    /* text-indent: 40px; */
+  }
+  
+
   @media only screen and (max-width: 780px) {
     
     #container {
@@ -110,8 +121,7 @@ html, body {
     } 
   }
   
-  img {
-  }
+ 
   
   #btn {
     padding-bottom: 3rem;
