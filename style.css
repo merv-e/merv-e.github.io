@@ -1,0 +1,166 @@
+html, body {
+    height: 100vh; 
+  }
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin: 0;
+  }
+  
+  
+  #navbar {
+    position: fixed; 
+    top: 0px;
+    right: 0px;
+    background: #D6F6DD;
+    width: 100%;
+    font-size: 25px;
+    border: 1px solid #D6F6DD;
+    z-index: 10; /* calismiyor*/
+    
+  }
+  
+  ul {
+    list-style: none;
+    display: flex; 
+    flex-position: row;  
+    float: right;
+  }
+  
+  .nav-link {
+    padding-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #406E8E;  
+  }
+  
+  #welcome-section {
+    position: relative;  
+    font-family: Georgia, sans-serif, cursive; /*bunun degisik olmasina gerek var mi :D */ 
+    height: 100vh;
+    overflow: auto;
+    background: #638475;
+  }
+  
+  #main-header{
+    font-size: 80px;
+    position: relative; 
+     }
+  
+  header {
+    padding-top: 100px; 
+    font-size: 50px;
+    top: 30vh;
+  } 
+  
+  h1 {
+    font-size: 40px;
+    padding-top: 10px;
+    font-weight : 600;
+    position: relative; 
+    top: 30vh;
+  }
+  
+  @media only screen and (max-width: 780px) {
+    #main-header {
+              top: 20vh;
+            }	 	
+    
+        h1 {
+              top: 20vh;
+            }
+  }
+  
+  #projects {
+    background: #25283D;
+  }
+  
+  #container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-column-gap: 25px;
+    grid-row-gap: 5rem;
+    padding: 50px 30px 60px 20px;
+    justify-items: center;    
+  }
+  
+  .project-tile {
+    display: flex;
+    flex-flow: column-wrap; 
+  }
+  
+  @media only screen and (max-width: 780px) {
+    
+    #container {
+     display: grid;
+     grid-template-columns: 1fr;
+        } 
+    
+    .project-tile {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+            } 
+    
+    img {
+      max-width: 100%;
+    } 
+  }
+  
+  img {
+  }
+  
+  #btn {
+    padding-bottom: 3rem;
+  }
+  
+  #profile-link {
+    border: 1px solid #406E8E;
+    box-shadow: 3px #406E8E; /* ? */
+    border-radius: 10%;
+    padding: 1px;
+    color: black;
+    background: #FAD4D8;
+    padding: 10px;
+  }
+  
+  #contact{
+    height: 100vh;
+    overflow: visible;
+    background: #DAC4F7;
+    
+  }
+  
+  #contact-container {
+    display: grid;
+    grid-auto-flow: column;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 100px; 
+  }
+  
+  @media only screen and (max-width:780px) {
+    #contact {
+      height: 100vh;
+      overflow: auto;
+    }
+    
+    #contact-container {
+      display: grid;
+      grid-auto-flow: row;
+      grid-row-gap: 3rem; 
+      margin: 0;
+      font-size: 30px;
+    }
+  }
+  
+  address {
+    font-style: normal;
+  }
+  
+  
+  
+  
