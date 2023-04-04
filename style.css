@@ -18,7 +18,7 @@ html, body {
     right: 0px;
     width: 100%;
     height: 10vh;
-    font-size: 25px;
+    font-size: 2vh;
     background: #003844;
     border: 1px solid #003844;
     z-index: 10; 
@@ -39,6 +39,15 @@ html, body {
     text-decoration: none;
     color: rgb(255,255,255);  
   }
+
+  /* @media only screen and (max-width: 780px) {
+    #navbar{
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  } */
   
   /* ABOUT */
   #welcome-section {
@@ -46,7 +55,6 @@ html, body {
     font-family: Georgia, sans-serif, cursive;
     height: 100vh;
     overflow: auto;
-    background-color: yellow;
     background-image: url(./screenshots/20221023_115310.jpg);
     display: flex;
     flex-direction: column;
@@ -63,7 +71,7 @@ html, body {
   
   header {
     padding-top: 20px; 
-    font-size: 5vh;
+    font-size: 4vh;
     /* top: 30vh; */
   } 
   
@@ -76,36 +84,89 @@ html, body {
   font-weight : 600; 
   }
   
-  @media only screen and (max-width: 780px) {
-    #main-header {
-      top: 10vh;
+  .rotation:hover{
+    /* transform: perspective(200px) rotateX(20deg), rotateY(40deg), rotateZ(90deg);*/
+    /* rotate: 0.25turn;  */
+    rotate: 360deg; 
+    animation: rotate 1.25s infinite;
+  }
 
+  @keyframes rotate {
+    0% {
+      rotate: 0deg;
+    }
+    100% {
+      border-radius: 50%;
+      /* width: 60px;
+      height: 60px; */
+      rotate: 360deg;
+      background-color: white;
+      /* padding: 10px; */
+    }
+  }
+
+  .rotating-icons {
+    display: flex;
+    gap: 2rem;
+  }
+
+  @media only screen and (max-width: 780px) {
+
+    body{
+      height: 50vh; 
+    }
+
+    #main-header {
+      top: 1vh;
     }	 	
-    
-    #welcome-section p{
-          top: 20vh;
-        }
+    /* ????? top belki azaltılabilir. */
+    #welcome-section {
+      /* top: 2vh; */
+      display: flex;
+      flex-direction: column;
+      justify-content:baseline;
+      align-items:center;
+      gap: 3rem;
+    }
+
+    #welcome-section header{
+     padding: 2rem;
+    }
+
+    .rotating-icons{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+      justify-content: center;
+      align-items: center;
+    }
   }
   
 
   /* PROJECTS */
-  #projects {
-    /* background: #25283D; */
-  }
   
-  #projects-container {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 40px;
-    padding: 50px 30px 60px 20px;
-    justify-items: center;
-    align-items: center;    
-  }
-  
-  img {
-    max-width: 80%;
-  }
-
+    #projects {
+      /* display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 40px;
+      padding-bottom: 5rem; */
+    }
+    
+    
+    #projects-container {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 20px;
+      padding: 20px 20px;
+      justify-items: center;
+      align-items: center;
+      font-size: 40%;    
+    }
+    
+    img {
+      max-width: 80%;
+    }
+    
   .project-tile {
     display: grid;
     grid-template-columns: 1fr 1fr;   
@@ -114,41 +175,51 @@ html, body {
   .project-info {
     text-align: left;
     line-height:  1.5;
-    font-size: medium;
-    /* text-indent: 40px; */
+    font-size: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-info h3 {
+    text-align: center;
   }
   
 
   @media only screen and (max-width: 780px) {
     
+    #projects {
+      padding-bottom: 20px;
+    }
+
     #projects-container {
      display: grid;
      grid-template-columns: 1fr;
-     /* gap: 2rem; */
+     gap: 4rem;
     } 
     
     .project-tile {
       display: block;
       margin-left: auto;
       margin-right: auto;
-            } 
+    } 
     
     img {
-      max-width: 100%;
+      max-width: 80%;
     } 
+
+    .project-info h3 {
+      font-size: 3vh;
+    }
   }
   
-  #see-more-button {
-    padding-bottom: 3rem;
-  }
 
   /* CONTACT */
-
   #contact{
     /* height: 100vh;
     overflow: visible; */
-    height: auto;
-    background: #003844;
+    /* height: auto; */
+    background-color: #003844;
     color: rgb(255,255,255)s;
     padding-bottom: 10px;
   }
@@ -158,52 +229,36 @@ html, body {
     grid-auto-flow: column;
     font-size: 20px;
     font-weight: 600;
-    padding-top: 5%; 
-    color: #CAA8F5;
-  }
-  
-  #contact-container a:link {
-    color: rgb(255,255,255);
-    text-decoration: none;
+    padding-top: 1%; 
+    /* color: #3b1271; */
   }
 
-  #contact-container a:visited {
-    color: #006C67;
-    text-decoration: none;
-  }
-  
-  #contact-container a:hover {
-    color: #330000;
-    text-decoration: none;
-  }
-
-  #contact-header {
-
-  }
-
-  #contact header {
+  #contact header, #contact-container a {
     color: rgb(255,255,255);
   }
+
+  /* TODO : icons to be changed.... */
+  #contact-container img {
+    border-radius: 20%;
+    /* padding: 10px; */
+    /* border: 0.5px white solid;  */
+  }
+
 
   @media only screen and (max-width:780px) {
-    /* Asagidaki kisim gerekli mi? */
     #contact {
-      /* height: 100vh; */
+      display: flex;
+      flex-direction: column;
+      height: 20vh; 
+      justify-content: space-between;
       overflow: auto;
     }
-    
-    #contact-container {
-      display: grid;
-      grid-auto-flow: row;
-      gap: 2rem; 
-      margin: 0;
-      font-size: 15px;
-      text-align: left;
+
+    #contact img {
+      width: 5vh;
+      height: 5vh;
     }
-  }
-  
-  address {
-    font-style: normal;
+
   }
   
   
