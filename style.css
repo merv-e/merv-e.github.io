@@ -9,10 +9,12 @@ html, body {
   }
   
   /* NAVBAR */
+
   #navbar {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
     align-items: center;
-    justify-content: flex-end;
     position: fixed; 
     top: 0px;
     right: 0px;
@@ -24,11 +26,17 @@ html, body {
     z-index: 10; 
   }
   
+  .contact-container {
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px 0px 20px;
+  }
+  
   ul {
+    display: flex;
+    flex-direction: row;
     list-style: none;
-    display: flex; 
-    flex-direction: row;  
-    float: right;
+    gap: 10px;
   }
   
   .nav-link {
@@ -39,15 +47,31 @@ html, body {
     text-decoration: none;
     color: rgb(255,255,255);  
   }
+  
 
-  /* @media only screen and (max-width: 780px) {
-    #navbar{
-      font-size: 15px;
+  /* TODO : e-mail will be changed  */
+  .contact-container img {
+    border-radius: 20%;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+
+
+  @media only screen and (max-width:780px) {
+ /*    .contact-container {
       display: flex;
-      align-items: center;
-      justify-content: flex-end;
+      flex-direction: column;
+      height: 20vh; 
+      justify-content: space-between;
+      overflow: auto;
     }
-  } */
+} */
+    .contact-container img {
+      max-width: 5vh;
+      height: 4vh;
+    }
+  }
   
   /* ABOUT */
   #welcome-section {
@@ -208,55 +232,7 @@ html, body {
       font-size: 3vh;
     }
   }
-  
-
-  /* CONTACT */
-  #contact{
-    /* height: 100vh;
-    overflow: visible; */
-    /* height: auto; */
-    background-color: #003844;
-    color: rgb(255,255,255)s;
-    padding-bottom: 10px;
-  }
-  
-  #contact-container {
-    display: grid;
-    grid-auto-flow: column;
-    font-size: 20px;
-    font-weight: 600;
-    padding-top: 1%; 
-    /* color: #3b1271; */
-  }
-
-  #contact header, #contact-container a {
-    color: rgb(255,255,255);
-  }
-
-  /* TODO : icons to be changed.... */
-  #contact-container img {
-    border-radius: 20%;
-    /* padding: 10px; */
-    /* border: 0.5px white solid;  */
-  }
-
-
-  @media only screen and (max-width:780px) {
-    #contact {
-      display: flex;
-      flex-direction: column;
-      height: 20vh; 
-      justify-content: space-between;
-      overflow: auto;
-    }
-
-    #contact img {
-      width: 5vh;
-      height: 5vh;
-    }
-
-  }
-  
+    
   
   
   
