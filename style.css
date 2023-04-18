@@ -26,11 +26,6 @@ html, body {
     z-index: 10; 
   }
   
-  .contact-container {
-    align-items: center;
-    justify-content: center;
-    padding: 0px 20px 0px 20px;
-  }
   
   ul {
     display: flex;
@@ -48,30 +43,43 @@ html, body {
     color: rgb(255,255,255);  
   }
   
+  .contact-container {
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px 0px 20px;
+  }
 
-  /* TODO : e-mail will be changed  */
+  /* TODO : e-mail-icon will be changed  */
   .contact-container img {
-    border-radius: 20%;
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 10px;
+    border-radius: 20%;
   }
 
-
-  @media only screen and (max-width:780px) {
- /*    .contact-container {
+  @media only screen and (max-width:1280px) {
+    .contact-container {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       height: 20vh; 
-      justify-content: space-between;
       overflow: auto;
     }
-} */
+    
     .contact-container img {
-      max-width: 5vh;
-      height: 4vh;
+      max-width: 3vh;
+      max-height: 3vh;
+    }
+
+    #navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; 
+      /* align-items: center; */
     }
   }
+  
   
   /* ABOUT */
   #welcome-section {
