@@ -6,72 +6,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
         <link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
     </head>
     <body>
       <nav id="navbar">
-        <div class="contact-container" >
+        <div class="navbar-container" >
           <ul>
               <li>
                   <a href="#welcome-section"
-                class="nav-link">About
+                >About
                   </a>
               </li>
               <li>
                   <a href="#projects" 
-                  class="nav-link">Projects
+                  >Projects
                   </a>
               </li>
           </ul>
         </div>
 
-        <div class="contact-container">
+        <div class="navbar-container">
             <ul>
                 <li>
                     <a href="https://github.com/merv-e" target="_blank">
                         <img 
                         src="contact-icons/github.png"
-                        width="40" 
-                        height="35"
                         />
                     </a>
                 </li>
                 
-                <!-- <li>
-                     <address> 
-                        <a href="mailto:mbustun@windowslive.com" target="_blank">
-                            <img 
-                            src="contact-icons/mail.png"
-                            width="40" 
-                            height="35"
-                            />
-                        </a> 
-                     </address> 
-                </li> -->
-
-                <!-- codepen icon -->
-                <!-- <li>
-                    <a href="https://codepen.io/merv-e" target="_blank">
+                <li>
+                    <a 
+                     href="https://twitter.com/mbustun"
+                     target="_blank">
                         <img 
-                        src="" 
-                        width="40" 
-                        height="35"
+                         src="contact-icons/twitter.png"
                         />
-                    </a> 
-                </li> -->
-                
+                    </a>
+                </li>
+
                 <li>
                     <a 
                     href="https://www.linkedin.com/in/mbustun/"
                     target="_blank">
-                    <img 
-                    src="contact-icons/linkedin.png"
-                    width="40" 
-                    height="35"
-                    />
-                </a>
-            </li>
-        </ul> 
+                        <img 
+                        src="contact-icons/linkedin.png"
+                        />
+                    </a>
+                </li>
+            </ul> 
         </div>
       </nav>
 
@@ -85,38 +68,24 @@
      <div class="rotating-icons">
         <img class="rotation" 
         src="icons-tech/HTML5.png"
-        width="30" 
-        height="40"
         />
         <img class="rotation" 
         src="icons-tech/CSS3.png"
-        width="50" 
-        height="50"
         />
         <img class="rotation" 
         src="icons-tech/js.png"
-        width="50" 
-        height="50"
         />
         <img class="rotation" 
         src="icons-tech/jquery.png"
-        width="50" 
-        height="50"
         />
         <img class="rotation" 
         src="icons-tech/bootstrap.png"
-        width="50" 
-        height="50"
         />
         <img class="rotation" 
         src="icons-tech/react.png"
-        width="50" 
-        height="50"
         />
         <img class="rotation" 
         src="icons-tech/redux.png"
-        width="50" 
-        height="50"
         />
 
      </div> 
@@ -124,10 +93,10 @@
 
     <section id="projects">
         <div>
-            <header>PROJECTS</header>
+            <header id="projects-header">PROJECTS</header>
         </div>
         
-        <div id="projects-container">
+       <div id="projects-container">
             <!-- My reads -->
             <div class="project-tile">
                 <a 
@@ -204,7 +173,7 @@
                 <a href="https://codepen.io/merv-e/full/KKRLmdM" 
                 target="_blank" 
                 >
-                    <img src="screenshots/random-quote-machine.jpg" 
+                    <img src="screenshots/random-quote-machine.png" 
                     alt="a screenshot of the random-quote-machine" border="0">        
                 </a>
                  <div class="project-info">
@@ -217,62 +186,60 @@
             
             
         <!-- Coursera projects -->
-
-        <!-- Miles to Kilometers Converter -->
-        <div class="project-tile">
-            <a 
-             href="https://github.com/merv-e/coursera-projects/tree/master/Advanced%20Converter" 
-             target="_blank"
-            >
-                <img src="screenshots/distance-converter.png" alt="miles-kilometres-converter" border="0">
-            </a>
-           
-        <div class="project-info">
-            <h3>Miles to Kilometers Converter</h3>
-            <p>Convert km to miles or miles to km with this app. It's possible to make convertions by clicking keys as well. This project and the project right below is from a Coursera project.<a href="https://github.com/merv-e/coursera-projects/blob/master/README.md">See more</a>
-            <br><br> 
-            Used technologies <strong>HTML, CSS, and JavaScript</strong>.
-            </p>
-            </div>
-        </div>
-
-
-        <!-- Vacation Destination  -->
-        <div class="project-tile">
-            <a 
-             href="https://github.com/merv-e/coursera-projects/tree/master/vacationDestination" 
-             target="_blank"
-            >
-                <img src="screenshots/vacation-destination.png" alt="a screenshot of the vacation-destination-app" border="0">
-            </a>
-           
-        <div class="project-info">
-            <h3>Vacation Destination</h3>
-            <p>Save your favorite destinations with this app! Add a name, place and description as well as uploading a photo and you're done! You can also delete it whenever you want with this app. 
-            <br><br>
-                Used technologies <strong>HTML, CSS, and JavaScript</strong>.
-            </p>
-            </div>
-        </div>
+<!-- 
+            Miles to Kilometers Converter
+            <div class="project-tile">
+                <a 
+                href="https://github.com/merv-e/coursera-projects/tree/master/Advanced%20Converter" 
+                target="_blank"
+                >
+                    <img src="screenshots/distance-converter.png" alt="miles-kilometres-converter" border="0">
+                </a>
             
-        </div>
+                <div class="project-info">
+                    <h3>Miles to Kilometers Converter</h3>
+                    <p>Convert km to miles or miles to km with this app. 
+                    <br><br> 
+                    Used technologies <strong>HTML, CSS, and JavaScript</strong>.
+                    </p>
+                </div>
+            </div>
 
-        <!-- <div> 
-            <button 
-             class="btn btn-secondary" 
-             >Click to see more projects
-            </button> 
-        </div> -->
+
+            Vacation Destination 
+            <div class="project-tile">
+                <a 
+                href="https://github.com/merv-e/coursera-projects/tree/master/vacationDestination" 
+                target="_blank"
+                >
+                    <img src="screenshots/vacation-destination.png" alt="a screenshot of the vacation-destination-app" border="0">
+                </a>
+            
+            <div class="project-info">
+                <h3>Vacation Destination</h3>
+                <p>Save your favorite destinations with this app! Add a name, place and description as well as uploading a photo and you're done! You can also delete it whenever you want with this app. 
+                <br><br>
+                    Used technologies <strong>HTML, CSS, and JavaScript</strong>.
+                </p>
+            </div>
+            </div>
+            
+       </div> -->
+
+       <!-- BUTTON -->
+        <div> 
+            <!-- btn class--- bootstrap class="btn btn-secondary"  -->
+            <a 
+             href="https://github.com/merv-e" target="_blank"
+            >
+                <button>Click to see more projects</button>
+            </a>
+        </div>
 
     </section>
 
-    <!-- <section id="contact"> -->
-        <!-- <header>CONTACT ME</header>  -->
-    
-    <!-- </section> -->
-
     <footer>
-
+        <p>Created by merv-e</p>
     </footer>
 
    </main>
