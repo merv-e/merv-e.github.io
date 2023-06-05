@@ -1,8 +1,6 @@
-  
   body {
     font-family: 'Nunito', sans-serif;
     text-align: center;
-    /* height: 100vh; */
     margin: 0;
   }
   
@@ -14,16 +12,15 @@
     justify-content: space-between; 
     align-items: center;
     position: fixed; 
-
     top: 0px;
     right: 0px;
     left: 0px;
-
     width: 100%;
     height: 10vh;
     background: #003844;
     border: 2px solid #003844;
-    z-index: 1;  /* neden 10? */
+    
+    z-index: 1;   /* neden 10? */
 
   }
   
@@ -35,7 +32,7 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 10px;
+    gap: 15px;
   }
   
   .nav-link {
@@ -48,9 +45,6 @@
   }
   
   .navbar-container {
-    /* align-items: center;
-    justify-content: center; */
-    /* padding: 0px 20px 0px 20px; */
     padding-right: 20px;
   }
 
@@ -93,7 +87,6 @@
   
   /* ABOUT */
   #welcome-section {
-    /* position: relative;   */
     font-family: Georgia, sans-serif, cursive;
     background-color:black;
     color: wheat;
@@ -103,17 +96,63 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
+    gap:50px;
   }
   
   #main-header{
     font-size: 8vh;
-  }
+    font-family: inherit;
+    overflow: hidden;
+    border-right: .15em solid grey;    
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .1em;
+    
+    animation:
+       typing 4s steps(30, end),
+       blink-caret .5s step-end infinite;
+    }
+    
+    @keyframes typing {
+      from {
+        width: 0
+      }
   
-  /* h1 idi p olarak degistirildi. */
+      to {
+        width: 100%
+      }
+    }
+  
+    @keyframes blink-caret {
+  
+      from,
+      to {
+        border-color: transparent
+      }
+  
+      50% {
+        border-color: grey;
+      }
+    }
+
   #welcome-section p {
     font-size: 20px;
   }
   
+  .rotating-icons {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .rotating-icons>img {
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    /* background-color: wheat; */
+    /* border-radius: 10px; */
+
+  }
+
   .rotation:hover{
     rotate: 360deg; 
     animation: rotate 1.25s infinite;
@@ -131,11 +170,6 @@
       /* transform: ; */
       /* width: 50px; */
     }
-  }
-
-  .rotating-icons {
-    display: flex;
-    gap: 1.5rem;
   }
 
   @media only screen and (max-width: 780px) {
@@ -168,13 +202,12 @@
   
     #projects {
       padding-bottom: 5rem; 
-      background-color: grey;
       /* add color */
+      background-color: grey;
     }
     
     #projects-header {
       font-size: 4vh;
-      /* margin: 30px; */
       padding: 50px;
     }
 
@@ -194,15 +227,10 @@
     
     .project-tile a > img {
       width: 500px;
-      /* height: auto; */
-      /* border: 2px solid; */
       border-radius: 10px;
     }
 
-    .rotating-icons > img {
-      width: 55px;
-      height: 50px;
-    }
+
     
   .project-info {
     text-align: left;
