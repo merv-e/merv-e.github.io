@@ -1,11 +1,18 @@
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     font-family: 'Nunito', sans-serif;
     text-align: center;
     margin: 0;
   }
-  
+
+  a{
+    text-decoration: none;
+  }
+
   /* NAVBAR */
-  
   #navbar {
     display: flex;
     flex-direction: row;
@@ -26,6 +33,8 @@
   
   #navbar a {
     font-size: 20px;
+    text-decoration: none;
+    color: rgb(255,255,255);  
   }
   
   #navbar ul {
@@ -39,10 +48,6 @@
     padding-right: 20px;
   }
   
-  #navbar a {
-    text-decoration: none;
-    color: rgb(255,255,255);  
-  }
   
   .navbar-container {
     padding-right: 20px;
@@ -57,22 +62,21 @@
     border-radius: 20%;
   }
 
-  @media only screen and (max-width:780px) {
+  @media only screen and (max-width:1280px) {
     .navbar-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 20vh; 
-      overflow: auto;
     }
 
     #navbar a {
-      font-size: 5vw;
+      font-size: 15px;
     }
     
     .navbar-container img {
-      width:10vw;
+      width: 30px;
       height:auto;
     }
 
@@ -91,7 +95,6 @@
     background-color:black;
     color: wheat;
     height: 100vh;
-    overflow: auto;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -137,6 +140,7 @@
 
   #welcome-section p {
     font-size: 20px;
+    flex-wrap: wrap;
   }
   
   .rotating-icons {
@@ -148,9 +152,6 @@
     padding: 5px;
     width: 50px;
     height: 50px;
-    /* background-color: wheat; */
-    /* border-radius: 10px; */
-
   }
 
   .rotation:hover{
@@ -167,8 +168,6 @@
       border-radius: 30%;
       rotate: 360deg;
       background-color: white;
-      /* transform: ; */
-      /* width: 50px; */
     }
   }
 
@@ -177,10 +176,18 @@
     #welcome-section {
       gap: 3rem;
       padding-top: 50px;
+      /* overflow: hidden; */
     }
 
     #welcome-section header{
      padding: 2rem;
+     font-size: 1.6rem;
+     /* display: flex; */
+     /* flex-wrap: wrap; */
+    }
+
+    #welcome-section p{
+      font-size: 15px;
     }
 
     .rotating-icons{
@@ -229,8 +236,6 @@
       width: 500px;
       border-radius: 10px;
     }
-
-
     
   .project-info {
     text-align: left;
@@ -303,15 +308,29 @@
     
   /* FOOTER */
   footer {
-    padding: 10px;
-    background-color: #003844;
+    padding: 2px;
+    background-color: black;
     color: white;
+
   }
   
   footer p{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-size: 12px;
+    padding-right: 5px;
   }
   
-  
+  /* footer a {
+    display: flex;
+    justify-self:flex-start;
+    color: whitesmoke;
+    font-size: 15px;
+  } */
+
+  /* footer img{
+    width: 40px;
+    height: auto;
+  }
+   */
