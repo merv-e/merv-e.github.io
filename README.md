@@ -1,17 +1,9 @@
 # Portfolio
 
-I created a simple yet useful responsive website to demonstrate my journey. Of course, this is not the final version. It'll be highly likely be updated soon!
+I created a simple yet impactful responsive website to showcase my journey. Although this isn't the final version, I strive to keep it updated regularly.
 
--------------------------
+---
 
-Frontend technologies, libraries and/or frameworks that are being used for my portfolio are:
+Used technologies:
+``` HTML5, CSS3 ```
 
-``` 
-HTML5
-CSS6
-Bootstrap
-```
-
-``` javascript 
-console.log("Hello world!")
-``` 
