@@ -322,8 +322,8 @@
   }
     
   /* FOOTER */
-  footer {
-    padding: 2px;
+  /* footer {
+    padding: 20px;
     background-color: var(--main--black);
     color: var(--white);
 
@@ -331,21 +331,8 @@
   
   footer p{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 20px;
     padding-right: 5px;
-  }
-  
-  /* footer a {
-    display: flex;
-    justify-self:flex-start;
-    color: whitesmoke;
-    font-size: 15px;
   } */
-
-  /* footer img{
-    width: 40px;
-    height: auto;
-  }
-   */
