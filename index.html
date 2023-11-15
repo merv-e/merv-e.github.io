@@ -6,41 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link href="style.css" rel="stylesheet" />
+    <link href="navbar.css" rel="stylesheet" />
+    <link href="about.css" rel="stylesheet" />
+    <link href="projects.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
   </head>
   <body>
-    <nav id="navbar">
-      <div class="navbar-container">
-        <ul>
-          <li>
-            <a href="#welcome-section">About </a>
-          </li>
-          <li>
-            <a href="#projects">Projects </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="navbar-container">
-        <ul>
-          <li>
-            <a href="https://github.com/merv-e" target="_blank">
-              <img src="./assets/contact-icons/github.png" />
-            </a>
-          </li>
-
-          <li>
-            <a href="https://twitter.com/mbustun" target="_blank">
-              <img src="./assets/contact-icons/twitter.png" />
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.linkedin.com/in/mbustun/" target="_blank">
-              <img src="./assets/contact-icons/linkedin.png" />
-            </a>
-          </li>
-        </ul>
-      </div>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="#welcome-section">About </a>
+        </li>
+        <li>
+          <a href="#projects">Projects </a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
     </nav>
 
     <main>
@@ -58,7 +41,6 @@
           <img class="rotation" src="./assets/icons-tech/bootstrap.png" />
           <img class="rotation" src="./assets/icons-tech/react.png" />
           <img class="rotation" src="./assets/icons-tech/redux.png" />
-          <img class="rotation" src="./assets/icons-tech/jest.png" />
         </div>
       </section>
 
@@ -82,7 +64,11 @@
             <div class="project-info">
               <h2>Continental Fusion Bistro</h2>
               <p>
-                This application allows you to seamlessly add and remove meals from your cart, mimicking the experience of ordering food online. Once you have added the desired meals, you can review your selections by clicking on 'Your Cart.' Additionally, you have the option to place an order after finalizing your meal choices. Upon clicking 'Complete' and providing your address information, you will receive confirmation on whether your order was successfully placed. The order details are then stored in Firebase.js, and you can view the details of your latest order in the console.
+                This application allows you to seamlessly add and remove meals
+                from your cart, mimicking the experience of ordering food
+                online. Once you have added the desired meals, you can review
+                your selections by clicking on 'Your Cart'. To explore more,
+                click on the image.
               </p>
               <p>
                 Tech Stack:
@@ -101,7 +87,14 @@
             </a>
             <div class="project-info">
               <h2>MovieFinder</h2>
-              <p>MovieFinder is a straightforward application designed to search for movies using a user-input search query. The underlying API powering this project is <a href="https://www.themoviedb.org" target="_blank">The Movie DB</a></p>
+              <p>
+                MovieFinder is a straightforward application designed to search
+                for movies using a user-input search query. The underlying API
+                powering this project is
+                <a href="https://www.themoviedb.org" target="_blank"
+                  >The Movie DB</a
+                >. To explore more, click on the image.
+              </p>
               <p>
                 Tech Stack:
                 <strong>HTML, CSS, vanilla JS</strong>.
@@ -124,10 +117,9 @@
               <h2>MyReads</h2>
               <p>
                 Keep track of your books with this web app by simply adding your
-                books to relevant shelves. </p>
-                <p>Tech Stack:
-                <strong>Bootstrap, React</strong>.
+                books to relevant shelves.
               </p>
+              <p>Tech Stack: <strong>Bootstrap, React</strong>.</p>
             </div>
           </div>
 
@@ -147,8 +139,9 @@
               <p>
                 Would you like your employers to work more efficiently as a team
                 while having fun? It's possible with this app! To have the
-                option to create, vote polls etc? </p>
-                <p>Tech Stack: <strong>Bootstrap, React, Redux, Jest</strong>.</p>
+                option to create, vote polls etc?
+              </p>
+              <p>Tech Stack: <strong>Bootstrap, React, Redux, Jest</strong>.</p>
             </div>
           </div>
 
@@ -169,13 +162,13 @@
                 A registration form with a progress bar on top that moves
                 forward every step of the form. The purpose to make this app was
                 to apply some of the knowledge I've learnt so far on a cool
-                looking form.</p> 
-                <p>Tech Stack: <strong>React, CSS</strong>.</p>
+                looking form.
+              </p>
+              <p>Tech Stack: <strong>React, CSS</strong>.</p>
             </div>
           </div>
 
           <!-- Other small projects  -->
-
           <!-- Markdown Previewer  -->
           <div class="project-tile">
             <a href="https://codepen.io/merv-e/full/QWrepbm" target="_blank">
@@ -189,20 +182,45 @@
               <p>
                 Would you like what you write to be converted to markdown? Here
                 is a basic but and efficient app for you to do it. A fundamental
-                tutorial is also added.</p>
-                <p>Tech Stack: <strong>HTML, CSS and React.</strong>.
+                tutorial is also added.
               </p>
+              <p>Tech Stack: <strong>HTML, CSS and React.</strong>.</p>
             </div>
           </div>
 
           <!-- SEE MORE OF MY PROJECTS -->
-          <div>
+          <div class="see-more-btn">
             <a href="https://github.com/merv-e" target="_blank">
-              <button>Click to see more</button>
+              <button>See more</button>
             </a>
           </div>
         </div>
       </section>
     </main>
+
+    <footer id="contact">
+      <header>CONTACT ME</header>
+      <div class="contact-container">
+        <ul>
+          <li>
+            <a href="https://github.com/merv-e" target="_blank">
+              <img src="./assets/contact-icons/github.png" />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/mbustun" target="_blank">
+              <img src="./assets/contact-icons/twitter.png" />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/mbustun/" target="_blank">
+              <img src="./assets/contact-icons/linkedin.png" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
