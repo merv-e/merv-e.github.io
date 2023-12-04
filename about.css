@@ -3,15 +3,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  /* gap: 50px; */
   height: 100vh;
   font-family: inherit;
   color: var(--main-blue);
   padding: 20px;
+  /* margin ve padding ekendi cunuku small screen'de navbar asağı iniyor o da görüntü açısından sorun çıkarıypr */
+  margin-top: 3rem; 
 }
 
 #main-header {
-  font-size: 8vh;
+  font-size: 7vh;
   overflow: hidden;
   border-right: 0.15em solid var(--main-blue);
   white-space: nowrap;
